@@ -7,3 +7,6 @@ header {
     margin-top: 12px;
     background-attachment: fixed;
 }
+.emailSubSmall {
+  display: none;
+}
