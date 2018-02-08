@@ -4,6 +4,13 @@ html{
 nav {
   text-align: center;
 }
+nav a {
+  color: #9f9f9f;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1.5em 4em;
+}
 .hamburger {
   display: none;
 }
@@ -97,4 +104,8 @@ h4 {
 .bar{
   width:100%;
   background-color: white;
+}
+ul {
+  list-style-type: none;
+  margin-top: 13em;
 }
