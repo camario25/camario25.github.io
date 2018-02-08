@@ -44,3 +44,15 @@ header {
   border-radius: 50%;
   margin: auto;
 }
+h2 {
+  text-align: center;
+}
+.aboutMeThree {
+  display: flex;
+}
+footer {
+  background-color: #bafaff;
+  text-align: center;
+  height: 190%;
+  width: 100%;
+}
