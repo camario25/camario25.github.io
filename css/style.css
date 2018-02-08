@@ -56,3 +56,12 @@ footer {
   height: 190%;
   width: 100%;
 }
+.skills {
+  padding: 0 2em;
+}
+#biography {
+  padding: 0 2em;
+}
+.skillsBox {
+  background-color: purple;
+}
