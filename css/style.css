@@ -61,15 +61,15 @@ main {
   background-image: url(http://via.placeholder.com/350x150);
   height: 25em;
   width: 25em;
-  border-radius: 100%;
-  margin: auto;
+  border-radius: 50%;
+  margin: 2em;
 }
 h2 {
   text-align: center;
   margin-bottom: 1.5em;
 }
 .aboutMeThree {
-  /* display: flex; */
+  display: flex;
 }
 footer {
   background-color: #B26EE3;
@@ -84,7 +84,6 @@ footer {
   padding: 0 2em;
 }
 .skillsBox {
-  /* background-color: purple; */
   display:flex;
   justify-content: space-between;
   
@@ -105,7 +104,6 @@ footer {
   justify-content: space-between;
 }
 .begAdv {
-  /* background-color: blue; */
   display: flex;
   justify-content: flex-end;
 }
@@ -124,13 +122,33 @@ h4 {
 }
 ul {
   list-style-type: none;
-  margin-top: 13em;
+  font-size: 1.5em;
+  padding-left: 0;
 }
 ul li {
-  padding: 2em;
+  padding: 1em;
 }
 .cloud{
   position:absolute;
   color:white:;
   
 }
+@media only screen and (max-width: 500px){
+  .hamburger {
+  	display: block;
+  	color: #fff;
+    font-size: 1.7rem;
+  	position: absolute;
+  	top: 8px;
+  	left: -25px;
+    }
+  nav a {
+    display: none;
+    }
+    .aboutMeThree {
+      display: inline-block;
+      justify-content: center;
+    }
+    ul {
+      display: flex;
+    }
