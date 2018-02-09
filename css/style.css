@@ -1,8 +1,10 @@
+
 html{
   box-sizing: border-box;
 }
 nav {
   text-align: center;
+  font-family: 'fontin_sans_rgregular';
 }
 nav a {
   color: #9f9f9f;
@@ -22,7 +24,11 @@ header {
     margin-bottom: 8em;
     margin-top: 12px;
     background-attachment: fixed;
+    font-family: 'fontin_sans_rgregular';
 }
+/* h1 {
+  font-family: 'fontin_sansbold_italic';
+} */
 .emailSubSmall {
   display: none;
 }
@@ -32,6 +38,9 @@ header {
   width: 25em;
   border-radius: 50%;
   margin: auto;
+}
+main {
+  font-family: 'fontin_sans_rgregular';
 }
 #myMusicTitle {
   border: solid 1px;
