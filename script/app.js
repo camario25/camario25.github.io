@@ -49,3 +49,9 @@
 // 
 // });
 // 
+
+$(window).on('scroll', function(){
+ if($(window).scrollTop()>894){
+  console.log("scroll function working")
+};
+});

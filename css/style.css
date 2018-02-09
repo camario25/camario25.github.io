@@ -11,7 +11,8 @@ nav a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 1.5em 4em;
+  margin: 1em 2.7em;
+  font-size: 1.3em;
 }
 .hamburger {
   display: none;
@@ -119,6 +120,7 @@ h4 {
   linear-gradient(315deg, transparent 10px, #4E3063 0) bottom right;
   background-size: 100% 50%;
   background-repeat: no-repeat;
+  color: #D3B6E8;
 }
 ul {
   list-style-type: none;
