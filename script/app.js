@@ -52,6 +52,16 @@
 
 $(window).on('scroll', function(){
  if($(window).scrollTop()>894){
-  console.log("scroll function working")
-};
+  console.log("scroll function working");
+  var $bar = $('.bar');
+    $bar.eq(0).animate({width:'65%'}, {duration: 2500});
+    $bar.eq(1).animate({width:'50%'}, {duration: 2000});
+    $bar.eq(2).animate({width:'40%'}, {duration: 1800});
+    $bar.eq(3).animate({width:'10%'}, {duration: 700});
+    $bar.eq(4).animate({width:'10%'}, {duration: 2000});
+    $bar.eq(5).animate({width:'10%'}, {duration: 2000});
+    $bar.eq(6).animate({width:'10%'}, {duration: 2000});
+    $bar.eq(7).animate({width:'65%'}, {duration: 2000});
+  };
 });
+

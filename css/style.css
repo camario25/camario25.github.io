@@ -101,7 +101,7 @@ footer {
   display: flex;
   width:100%;
   padding:1em;
-  justify-content: space-between;
+  justify-content:flex-start;
 }
 .begAdv {
   display: flex;
@@ -111,7 +111,7 @@ h4 {
   padding: 0 2.5em;
 }
 .bar{
-  width:100%;
+  width: 0;
   background-color: #4E3063;
   background: 
   linear-gradient(225deg, transparent 10px, #4E3063 0) top right,
