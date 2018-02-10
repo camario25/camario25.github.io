@@ -34,6 +34,7 @@ h1 {
   padding-top: 2em;
   font-size: 3em;
 }
+
 .emailSubSmall {
   display: none;
 }
@@ -92,11 +93,23 @@ footer {
 #skillsList{
   width:60%;
 }
+p {
+  line-height: 1.5em;
+}
+#skillsTestimonials p {
+  margin-left: 0;
+  margin-right: 0;
+  display: none;
+}
+
+#skillsTestimonials p:first-of-type {
+  display: block;
+}
 #skillsTestimonials{
-  width:30%;
+  width:35%;
   text-align: center;
   background-color: #D3B6E8;
-  margin: 5em 0 1em 0;
+  margin: 5em 0 1em 1em;
 }
 #skillsList  div{
   display: flex;
@@ -148,7 +161,7 @@ form {
   height: 2em;
   margin: 1em 0;
   border: solid 2px;
-  border-color: #666666;
+  border-color: #B26EE3;
   padding: 0 .75em;
 }
 #email {
@@ -164,7 +177,7 @@ form {
 }
 textarea {
   border: solid 2px;
-  border-color: #666666;
+  border-color: #B26EE3;
   height: 9em;
   padding-left: .75em;
   width: 100%;
@@ -172,8 +185,12 @@ textarea {
 #submit {
   margin-top: 1em;
   border: solid 2px;
-  border-color: #666666;
+  border-color: #B26EE3;
   height: 3em;
+  background-color: 
+}
+#copyright {
+  margin-top: 1em;
 }
 /*=====================================================
 effects
@@ -204,7 +221,7 @@ media query's
 @media only screen and (max-width: 500px){
   .hamburger {
   	display: block;
-  	color: #fff;
+  	color: #4E3063;
     font-size: 1.7rem;
   	position: absolute;
   	top: 8px;

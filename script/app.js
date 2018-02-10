@@ -1,25 +1,26 @@
-// 
-// $(document).ready(function(){
-//   //width of the screen
-//   // make i tag load off left of screen
-//   // 
-// 
-// 
-// 
-// 
-//   // function cloudGenerator(){
-//   //   var left=`${Math.floor(Math.random()*100)}vw`;
-//   //   var top=`${Math.floor(Math.random()*100)+15}vh`;
-//   //   var div=$('<div></div>');
-//   //   div.addClass('cloud');
-//   //   var el=$('<i></i>');
-//   //   el.addClass('fas fa-cloud');
-//   //   div.append(el);
-//   //   div.css({'left':left,'top':top});
-//   //   header.append(div);
-//   //   console.log(div.position());
-//   //   div.animate({left: '-=200'}, 50000,"linear", cloudGenerator());
-//   // }
+
+$(document).ready(function(){
+  console.log('hell0');
+  //width of the screen
+  // make i tag load off left of screen
+  // 
+
+
+
+
+  // function cloudGenerator(){
+  //   var left=`${Math.floor(Math.random()*100)}vw`;
+  //   var top=`${Math.floor(Math.random()*100)+15}vh`;
+  //   var div=$('<div></div>');
+  //   div.addClass('cloud');
+  //   var el=$('<i></i>');
+  //   el.addClass('fas fa-cloud');
+  //   div.append(el);
+  //   div.css({'left':left,'top':top});
+  //   header.append(div);
+  //   console.log(div.position());
+  //   div.animate({left: '-=200'}, 50000,"linear", cloudGenerator());
+  // }
 // 
 //   function cloudGenerator(){
 //     // var el=$('<i></i>');
@@ -46,9 +47,27 @@
 // // 
 // // };
 //   setInterval(cloudGenerator,1000);
-// 
-// });
-// 
+
+  var quoteCounter = 0;
+  var $testimonials = '#skillsTestimonials p';
+  console.log(quoteCounter);
+  var quoteLength = $($testimonials).length;
+  console.log(quoteLength);
+
+  setInterval(function () {
+    $($testimonials).eq(quoteCounter).fadeOut(800, function () {
+      if (quoteCounter === quoteLength - 1) {
+        console.log('counter =0');
+        quoteCounter = 0;
+      } else {
+        quoteCounter += 1;
+        console.log('counter + 1');
+      }
+      $($testimonials).eq(quoteCounter).fadeIn();
+    });
+  }, 8000);
+});
+
 
 $(window).on('scroll', function(){
  if($(window).scrollTop()>810){
