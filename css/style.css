@@ -22,14 +22,18 @@ header {
     background-position: center;
     background-size: cover;
     height: 50em;
-    margin-bottom: 8em;
+    margin-bottom: 4em;
     margin-top: 12px;
     background-attachment: fixed;
     font-family: 'fontin_sans_rgregular';
 }
-/* h1 {
-  font-family: 'fontin_sansbold_italic';
-} */
+h1 {
+  text-align: center;
+  margin-bottom: 2em;
+  font-family: 'fontin_sans_rgbold';
+  padding-top: 2em;
+  font-size: 3em;
+}
 .emailSubSmall {
   display: none;
 }
@@ -53,20 +57,17 @@ main {
   left: 114px;
   top: 75px;
 }
-.centered {
-  text-align: center;
-  margin-bottom: 2.5em;
-}
 .circlePhoto {
   background-image: url(http://via.placeholder.com/350x150);
   height: 25em;
   width: 25em;
   border-radius: 50%;
-  margin: 2em;
+  margin: 0 2em 2em 2em;
 }
 h2 {
   text-align: center;
   margin-bottom: 1.5em;
+  font-family: 'fontin_sans_rgbold';
 }
 .aboutMeThree {
   display: flex;
@@ -133,6 +134,32 @@ ul li {
   color:white:;
   
 }
+/*=====================================================
+effects
+=======================================================
+*/
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  font-weight: bold;
+  text-decoration: underling;
+  transition: all .3s ease-in-out;
+}
+}
+button:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+  border: solid 3px;
+  background-color: #D3B6E8;
+  height: 3em;
+}
+/*=====================================================
+media query's
+=======================================================
+*/
+
 @media only screen and (max-width: 500px){
   .hamburger {
   	display: block;

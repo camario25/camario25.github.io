@@ -51,7 +51,7 @@
 // 
 
 $(window).on('scroll', function(){
- if($(window).scrollTop()>894){
+ if($(window).scrollTop()>810){
   console.log("scroll function working");
   var $bar = $('.bar');
     $bar.eq(0).animate({width:'65%'}, {duration: 2500});
