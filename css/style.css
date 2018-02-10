@@ -132,7 +132,48 @@ ul li {
 .cloud{
   position:absolute;
   color:white:;
-  
+}
+form {
+  margin: auto;
+  padding: 0 5em 5em 4em;
+}
+.inputTop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%
+}
+.inputTop input{
+  width: 100%;
+  /* width: 50%; */
+  height: 2em;
+  margin: 1em 0;
+  border: solid 2px;
+  border-color: #666666;
+  padding: 0 .75em;
+}
+#email {
+  margin-left: .5em;
+}
+.inputTop:first-child{
+  margin-right: .5em;
+}
+.inputBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+textarea {
+  border: solid 2px;
+  border-color: #666666;
+  height: 9em;
+  padding-left: .75em;
+  width: 100%;
+}
+#submit {
+  margin-top: 1em;
+  border: solid 2px;
+  border-color: #666666;
+  height: 3em;
 }
 /*=====================================================
 effects
