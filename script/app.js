@@ -65,12 +65,12 @@ $(document).ready(function(){
       }
       $($testimonials).eq(quoteCounter).fadeIn();
     });
-  }, 8000);
+  }, 6500);
 });
 
 
 $(window).on('scroll', function(){
- if($(window).scrollTop()>810){
+ if($(window).scrollTop()>780){
   console.log("scroll function working");
   var $bar = $('.bar');
     $bar.eq(0).animate({width:'65%'}, {duration: 2500});
