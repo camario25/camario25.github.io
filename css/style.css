@@ -59,20 +59,26 @@ main {
   top: 75px;
 }
 .circlePhoto {
-  background-image: url(http://via.placeholder.com/350x150);
+  background-image: url(../assets/Mario-Staff.jpg);
+  background-position: center;
+  background-size: cover;
   height: 25em;
   width: 25em;
   border-radius: 50%;
-  margin: 0 2em 2em 2em;
+  margin: auto;
 }
 h2 {
   text-align: center;
   margin-bottom: 1.5em;
   font-family: 'fontin_sans_rgbold';
 }
-.aboutMeThree {
-  display: flex;
+#favtext {
+  text-align: center;
+  font-size: 3em;
 }
+/* .aboutMeThree {
+  display: flex;
+} */
 footer {
   background-color: #B26EE3;
   text-align: center;
@@ -95,6 +101,11 @@ footer {
 }
 p {
   line-height: 1.5em;
+}
+#aboutP {
+  width: 40em;
+  text-align: center;
+  margin: auto;
 }
 #skillsTestimonials p {
   margin-left: 0;
@@ -144,7 +155,9 @@ h4 {
 ul {
   list-style-type: none;
   font-size: 1.5em;
-  padding-left: 0;
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: center;
 }
 ul li {
   padding: 1em;
@@ -246,4 +259,7 @@ media query's
     }
     ul {
       display: flex;
+    }
+    #aboutP {
+      width: 22em;
     }
