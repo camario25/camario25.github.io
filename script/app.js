@@ -21,32 +21,32 @@ $(document).ready(function(){
   //   console.log(div.position());
   //   div.animate({left: '-=200'}, 50000,"linear", cloudGenerator());
   // }
+
+  function cloudGenerator(){
+    // var el=$('<i></i>');
+    // el.addClass('fas fa-cloud');
+    // 
+    // var div=$('<div></div>');
+    // div.addClass('cloud');
+    var cloud = $("<div class='cloud'><i class='fas fa-cloud'></i></div>");
+    var left= document.body.offsetWidth + cloud.width();
+    var top=`${Math.floor(Math.random()*100)+15}vh`;
+
+    // div.append(el);
+    cloud.css({'left':left,'top':top});
+    header.append(cloud);
+    console.log(cloud.position());
+    cloud.animate({left: -( cloud.width() ) }, 50000,"linear",function(){
+      cloud.remove();
+    });
+  }
+
+  var header= $("header");
+
+//   for(var i=0;i<number;i++){
 // 
-//   function cloudGenerator(){
-//     // var el=$('<i></i>');
-//     // el.addClass('fas fa-cloud');
-//     // 
-//     // var div=$('<div></div>');
-//     // div.addClass('cloud');
-//     var cloud = $("<div class='cloud'><i class='fas fa-cloud'></i></div>");
-//     var left= document.body.offsetWidth + cloud.width();
-//     var top=`${Math.floor(Math.random()*100)+15}vh`;
-// 
-//     // div.append(el);
-//     cloud.css({'left':left,'top':top});
-//     header.append(cloud);
-//     console.log(cloud.position());
-//     cloud.animate({left: -( cloud.width() ) }, 50000,"linear",function(){
-//       cloud.remove();
-//     });
-//   }
-// 
-//   var header= $("header");
-// 
-// //   for(var i=0;i<number;i++){
-// // 
-// // };
-//   setInterval(cloudGenerator,1000);
+// };
+  setInterval(cloudGenerator,1000);
 
   var quoteCounter = 0;
   var $testimonials = '#skillsTestimonials p';
@@ -62,7 +62,7 @@ $(document).ready(function(){
       $($testimonials).eq(quoteCounter).fadeIn();
     });
   }, 6500);
-  
+    
 });
 
 
@@ -101,9 +101,17 @@ var sport = new Favorite("Soccer World Cup!", '../assets/world_cup.jpeg', "$('#f
 var drink = new Favorite("All Tea!", '../assets/tea1.png', "$('#fav6')");
 
 var favoritesArray = [music, food, travel, movie, sport, drink];
+
+// $(favoritesArray).each(function {
+// 
+// })
+
 $('#fav1').on('click mouseover', function () {
   console.log(music.appear);
-  
-  
+  $('.circlePhoto').append("<img src='../assets/MarioDJing.jpg>");
+  console.log('fav111');
+  $('#favtext').append(music.name);
+  $('#fav1').off('click mouseover');
+
 } );
 
