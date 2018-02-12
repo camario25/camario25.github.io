@@ -276,3 +276,11 @@ media query's
     iframe {
       height: 300px;
     }
+    .navSmall {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #D3B6E8;
+      align-items: center;
+      font-size: 2em;
+    }

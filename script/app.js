@@ -93,6 +93,13 @@ $(window).on('scroll', function(){
     $bar.eq(7).animate({width:'65%'}, {duration: 2000});
   }
 });
+$('.hamburger').on('click', function (e) {
+  e.preventDefault();
+  console.log('hamtest');
+  $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
+  $('section:first').addClass('navSmall');
+});
+
 
 function Favorite (name, image, trigger) {
   console.log('constructed');
