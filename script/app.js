@@ -98,8 +98,20 @@ $('.hamburger').on('click', function (e) {
   console.log('hamtest');
   $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
   $('section:first').addClass('navSmall');
-});
 
+});
+// var toggle = function () {
+//   if ($('section:first').attr() === "navSmall") {
+//     $('section:first').hide();
+//   }
+// }
+// $('.hamburger').toggle(function () {
+//   console.log('hamtest');
+//   $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
+//   $('section:first').addClass('navSmall');
+// }, function () {
+//   $('section:first').hide();
+// });
 
 function Favorite (name, image, trigger) {
   console.log('constructed');
