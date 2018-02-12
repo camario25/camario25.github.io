@@ -35,7 +35,7 @@ $(document).ready(function(){
     // div.append(el);
     cloud.css({'left':left,'top':top});
     header.append(cloud);
-    console.log(cloud.position());
+    // console.log(cloud.position());
     cloud.animate({left: -( cloud.width() ) }, 50000,"linear",function(){
       cloud.remove();
     });
@@ -65,14 +65,14 @@ $(document).ready(function(){
     
 });
 
-// $('nav a').on('click', function(e) {
-//   e.preventDefault();
-//   var thisTarget = $(this).attr('href');
-//   var targetOffset = $(thisTarget).offset().top;
-//   $('body').animate({
-//     scrollTop: targetOffset
-//   }, 600);
-// });
+$(".nav1").on('click', function(e) {
+  e.preventDefault();
+  var thisTarget = $(this).attr('href');
+  var targetOffset = $(thisTarget).offset().top;
+  $('body').animate({
+    'scrollTop': targetOffset
+  }, 4000);
+});
 
 $(window).on('scroll', function(){
  if($(window).scrollTop()>780){
@@ -87,6 +87,7 @@ $(window).on('scroll', function(){
     $bar.eq(7).animate({width:'65%'}, {duration: 2000});
   }
 });
+
 $('.hamburger').on('click', function (e) {
   e.preventDefault();
   console.log('hamtest');

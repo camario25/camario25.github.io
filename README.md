@@ -12,5 +12,6 @@ Another aspect of Webdesign that I learned for the first time was how to use an 
 
 Finally the jquery.  I asked for help from the more advanced students in the class and they were super helpful!  Abdulhalim and Marcelino were especially helpful and making the cloud movement work.  Other students and Stephanie helped me understand what was going on in the jquery process.  I got many things to work but failed on what I wanted to happen on about section.
 
-I could not get my jquery to change the background photo of my circle image in the about section.  I was very frustrating but I learned a lot as I reviewed our class notes and read documentation.  I wanted the links to change the photo and add a text underneath but couldn't get to work right.  Every step seemed like a deep dive into learning something new.
+I feel I am still missing some process to work out the logic and get the right process to solve the problem.  I could not get my jquery to change the background photo of my circle image in the about section.  I was very frustrating but I learned a lot as I reviewed our class notes and read documentation.  I wanted the links to change the photo and add a text underneath but couldn't get to work right.  Every step seemed like a deep dive into learning something new.
+
 
