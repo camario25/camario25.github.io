@@ -65,20 +65,14 @@ $(document).ready(function(){
     
 });
 
-$('.nav-links a, .logo a').on('click', function(e) {
-  // prevent the standard link operation on click
-  e.preventDefault();
-  // use the href of the link to identify what
-  // section to scroll to
-  var thisTarget = $(this).attr('href');
-  // get that section's top offset
-  var targetOffset = $(thisTarget).offset().top;
-  // use jQuery.animate() to animate the body's
-  // scrollTop to the targetOffest
-  $('body').animate({
-    scrollTop: targetOffset
-  }, 600);
-});
+// $('nav a').on('click', function(e) {
+//   e.preventDefault();
+//   var thisTarget = $(this).attr('href');
+//   var targetOffset = $(thisTarget).offset().top;
+//   $('body').animate({
+//     scrollTop: targetOffset
+//   }, 600);
+// });
 
 $(window).on('scroll', function(){
  if($(window).scrollTop()>780){
@@ -98,8 +92,17 @@ $('.hamburger').on('click', function (e) {
   console.log('hamtest');
   $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
   $('section:first').addClass('navSmall');
-
 });
+
+// $('.hamburger').toggle( function () {
+//   $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
+//   $('section:first').addClass('navSmall');
+// },
+//   function () {
+//   $('section:first').detach();
+// });
+
+
 // var toggle = function () {
 //   if ($('section:first').attr() === "navSmall") {
 //     $('section:first').hide();
