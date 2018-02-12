@@ -280,10 +280,11 @@ media query's
       height: 300px;
     }
     .navSmall {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      display: none;
       background-color: #D3B6E8;
-      align-items: center;
       font-size: 2em;
+      text-align: right;
+    }
+    .navSmall a {
+      margin: 0 .7em;
     }

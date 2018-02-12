@@ -86,12 +86,26 @@ $(window).on('scroll', function(){
   }
 });
 
+// $('.hamburger').on('click', function (e) {
+//   e.preventDefault();
+//   console.log('hamtest');
+//   $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
+//   $('section:first').addClass('navSmall');
+// });
+
 $('.hamburger').on('click', function (e) {
   e.preventDefault();
   console.log('hamtest');
-  $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
-  $('section:first').addClass('navSmall');
+  $('.navSmall').toggle(500);  
 });
+
+
+
+// $('.hamburger').on('click', function (e) {
+//   e.preventDefault();
+//   console.log('hamtest');
+//   $('body').remove("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
+// });
 
 // $('.hamburger').toggle( function () {
 //   $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
