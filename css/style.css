@@ -17,6 +17,9 @@ nav a {
 .hamburger {
   display: none;
 }
+.navSmall{
+  display: none;
+}
 header {
     background-image: url(../assets/skyBackground.jpeg);
     background-position: center;

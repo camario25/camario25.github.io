@@ -69,9 +69,7 @@ $(".nav1").on('click', function(e) {
   e.preventDefault();
   var thisTarget = $(this).attr('href');
   var targetOffset = $(thisTarget).offset().top;
-  $('body').animate({
-    'scrollTop': targetOffset
-  }, 4000);
+  $('html, body').animate({scrollTop: targetOffset}, 1000);
 });
 
 $(window).on('scroll', function(){
