@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  console.log('hell0');
+  // console.log('hell0');
   //width of the screen
   // make i tag load off left of screen
   // 
@@ -50,28 +50,24 @@ $(document).ready(function(){
 
   var quoteCounter = 0;
   var $testimonials = '#skillsTestimonials p';
-  console.log(quoteCounter);
   var quoteLength = $($testimonials).length;
-  console.log(quoteLength);
 
   setInterval(function () {
     $($testimonials).eq(quoteCounter).fadeOut(800, function () {
       if (quoteCounter === quoteLength - 1) {
-        console.log('counter =0');
         quoteCounter = 0;
       } else {
         quoteCounter += 1;
-        console.log('counter + 1');
       }
       $($testimonials).eq(quoteCounter).fadeIn();
     });
   }, 6500);
+  
 });
 
 
 $(window).on('scroll', function(){
  if($(window).scrollTop()>780){
-  console.log("scroll function working");
   var $bar = $('.bar');
     $bar.eq(0).animate({width:'65%'}, {duration: 2500});
     $bar.eq(1).animate({width:'50%'}, {duration: 2000});
@@ -81,6 +77,33 @@ $(window).on('scroll', function(){
     $bar.eq(5).animate({width:'10%'}, {duration: 2000});
     $bar.eq(6).animate({width:'10%'}, {duration: 2000});
     $bar.eq(7).animate({width:'65%'}, {duration: 2000});
-  };
+  }
 });
+
+function Favorite (name, image, trigger) {
+  console.log('constructed');
+  this.name = name;
+  this.image = image;
+  this.trigger = trigger;
+}
+
+Favorite.prototype = {
+  appear: function () {
+    console.log('appear');
+    
+  }
+};
+var music = new Favorite("DJing and Producing Music!", '../assets/MarioDJing.jpg', "$('#fav1')");
+var food = new Favorite("Anything Curry!", '..assets/curry1.jpg', "$('#fav2')");
+var travel = new Favorite("Flying the Globe!", '../assets/travel.jpeg', "$('#fav3')");
+var movie = new Favorite("Nacho Libre!", '../assets/luchador.jpg', "$('#fav4')");
+var sport = new Favorite("Soccer World Cup!", '../assets/world_cup.jpeg', "$('#fav5')");
+var drink = new Favorite("All Tea!", '../assets/tea1.png', "$('#fav6')");
+
+var favoritesArray = [music, food, travel, movie, sport, drink];
+$('#fav1').on('click mouseover', function () {
+  console.log(music.appear);
+  
+  
+} );
 
