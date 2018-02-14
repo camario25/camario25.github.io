@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  // console.log('hell0');
+  console.log('hell0');
   //width of the screen
   // make i tag load off left of screen
   // 
@@ -129,38 +129,86 @@ $('.hamburger').on('click', function (e) {
 //   $('section:first').hide();
 // });
 
-function Favorite (name, image, trigger) {
-  console.log('constructed');
-  this.name = name;
-  this.image = image;
-  this.trigger = trigger;
-}
-
-Favorite.prototype = {
-  appear: function () {
-    console.log('appear');
-    
-  }
-};
-var music = new Favorite("DJing and Producing Music!", '../assets/MarioDJing.jpg', "$('#fav1')");
-var food = new Favorite("Anything Curry!", '..assets/curry1.jpg', "$('#fav2')");
-var travel = new Favorite("Flying the Globe!", '../assets/travel.jpeg', "$('#fav3')");
-var movie = new Favorite("Nacho Libre!", '../assets/luchador.jpg', "$('#fav4')");
-var sport = new Favorite("Soccer World Cup!", '../assets/world_cup.jpeg', "$('#fav5')");
-var drink = new Favorite("All Tea!", '../assets/tea1.png', "$('#fav6')");
-
-var favoritesArray = [music, food, travel, movie, sport, drink];
-
-// $(favoritesArray).each(function {
+// function Favorite (name, image, trigger) {
+//   console.log('constructed');
+//   this.name = name;
+//   this.image = image;
+//   this.trigger = trigger;
+// }
 // 
-// })
+// Favorite.prototype = {
+//   appear: function () {
+//       console.log(this.appear);
+//       $('.circlePhoto').append(this.image);
+//       console.log('fav111');
+//       $('#favtext').append(this.name);
+//       $(this.name).off('click mouseover');
+//   }
+// };
+// var music = new Favorite("DJing and Producing Music!", '../assets/MarioDJing.jpg', "$('#fav1')");
+// var food = new Favorite("Anything Curry!", '..assets/curry1.jpg', "$('#fav2')");
+// var travel = new Favorite("Flying the Globe!", '../assets/travel.jpeg', "$('#fav3')");
+// var movie = new Favorite("Nacho Libre!", '../assets/luchador.jpg', "$('#fav4')");
+// var sport = new Favorite("Soccer World Cup!", '../assets/world_cup.jpeg', "$('#fav5')");
+// var drink = new Favorite("All Tea!", '../assets/tea1.png', "$('#fav6')");
+// 
+// var favoritesArray = [music, food, travel, movie, sport, drink];
 
-$('#fav1').on('click mouseover', function () {
-  console.log(music.appear);
-  $('.circlePhoto').append("<img src='../assets/MarioDJing.jpg>");
+
+
+// $(favoritesArray).each(function (i, favorite) {
+//   console.log(favorite);
+//   $('.favList a').on('click mouseover', function () {
+//     favorite.appear();
+//     console.log(favorite.appear());
+//   });
+// });
+// 
+$('#fav1').on('click', function () {
+  console.log('string');
+  $('.circlePhoto').css('background-image', "url(./assets/MarioDJing.jpg)");
   console.log('fav111');
-  $('#favtext').append(music.name);
-  $('#fav1').off('click mouseover');
+  $('#favtext').append("test");
+  // $('#fav1').off('click mouseover');
+});
 
-} );
+$('#fav2').on('click', function () {
+  console.log('string');
+  $('.circlePhoto').css('background-image', "url(./assets/curry1.jpg)");
+  console.log('fav111');
+  $('#favtext').append("test");
+  // $('#fav1').off('click mouseover');
+});
 
+$('#fav3').on('click', function () {
+  console.log('string');
+  $('.circlePhoto').css('background-image', "url(./assets/travel.jpeg)");
+  console.log('fav111');
+  $('#favtext').append("test");
+  // $('#fav1').off('click mouseover');
+});
+
+$('#fav4').on('click', function () {
+  console.log('string');
+  $('.circlePhoto').css('background-image', "url(./assets/luchador.jpg)");
+  console.log('fav111');
+  $('#favtext').append("test");
+  // $('#fav1').off('click mouseover');
+});
+
+$('#fav5').on('click', function () {
+  console.log('string');
+  $('.circlePhoto').css('background-image', "url(./assets/world_cup.jpeg)");
+  console.log('fav111');
+  $('#favtext').append("test");
+  // $('#fav1').off('click mouseover');
+});
+
+$('#fav6').on('click', function () {
+  $('#favtext').empty();
+  console.log($('#favtext'));
+  $('.circlePhoto').css('background-image', "url(./assets/tea1.png)");
+  $('#favtext').append("test");
+  console.log('#favtext');
+  // $('#fav1').off('click mouseover');
+});
