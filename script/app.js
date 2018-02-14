@@ -164,51 +164,38 @@ $('.hamburger').on('click', function (e) {
 //   });
 // });
 // 
-$('#fav1').on('click', function () {
-  console.log('string');
-  $('.circlePhoto').css('background-image', "url(./assets/MarioDJing.jpg)");
-  console.log('fav111');
-  $('#favtext').append("test");
-  // $('#fav1').off('click mouseover');
-});
-
-$('#fav2').on('click', function () {
-  console.log('string');
-  $('.circlePhoto').css('background-image', "url(./assets/curry1.jpg)");
-  console.log('fav111');
-  $('#favtext').append("test");
-  // $('#fav1').off('click mouseover');
-});
-
-$('#fav3').on('click', function () {
-  console.log('string');
-  $('.circlePhoto').css('background-image', "url(./assets/travel.jpeg)");
-  console.log('fav111');
-  $('#favtext').append("test");
-  // $('#fav1').off('click mouseover');
-});
-
-$('#fav4').on('click', function () {
-  console.log('string');
-  $('.circlePhoto').css('background-image', "url(./assets/luchador.jpg)");
-  console.log('fav111');
-  $('#favtext').append("test");
-  // $('#fav1').off('click mouseover');
-});
-
-$('#fav5').on('click', function () {
-  console.log('string');
-  $('.circlePhoto').css('background-image', "url(./assets/world_cup.jpeg)");
-  console.log('fav111');
-  $('#favtext').append("test");
-  // $('#fav1').off('click mouseover');
-});
-
-$('#fav6').on('click', function () {
+$('#fav1').on('click mouseover', function () {
   $('#favtext').empty();
-  console.log($('#favtext'));
+  $('.circlePhoto').css('background-image', "url(./assets/MarioDJing.jpg)");
+  $('#favtext').append("DJing and Producing Music!");
+});
+
+$('#fav2').on('click mouseover', function () {
+  $('#favtext').empty();
+  $('.circlePhoto').css('background-image', "url(./assets/curry1.jpg)");
+  $('#favtext').append("Anything Curry!");
+});
+
+$('#fav3').on('click mouseover', function () {
+  $('#favtext').empty();
+  $('.circlePhoto').css('background-image', "url(./assets/travel.jpeg)");
+  $('#favtext').append("Flying the Globe!");
+});
+
+$('#fav4').on('click mouseover', function () {
+  $('#favtext').empty();
+  $('.circlePhoto').css('background-image', "url(./assets/luchador.jpg)");
+  $('#favtext').append("Nacho Libre!");
+});
+
+$('#fav5').on('click mouseover', function () {
+  $('#favtext').empty();
+  $('.circlePhoto').css('background-image', "url(./assets/world_cup.jpeg)");
+  $('#favtext').append("Soccer World Cup!");
+});
+
+$('#fav6').on('click mouseover', function () {
+  $('#favtext').empty();
   $('.circlePhoto').css('background-image', "url(./assets/tea1.png)");
-  $('#favtext').append("test");
-  console.log('#favtext');
-  // $('#fav1').off('click mouseover');
+  $('#favtext').append("All Tea!");
 });
