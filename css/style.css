@@ -98,7 +98,7 @@ footer {
 .skillsBox {
   display:flex;
   justify-content: space-between;
-  
+
 }
 #skillsList{
   width:60%;
@@ -142,7 +142,7 @@ h4 {
 .bar{
   width: 0;
   background-color: #4E3063;
-  background: 
+  background:
   linear-gradient(225deg, transparent 10px, #4E3063 0) top right,
   linear-gradient(315deg, transparent 10px, #4E3063 0) bottom right;
   background-size: 100% 50%;
@@ -213,7 +213,7 @@ textarea {
   border: solid 2px;
   border-color: #B26EE3;
   height: 3em;
-  background-color: 
+  background-color:
 }
 .social i {
   padding: .2em .3em 0 0;
