@@ -30,13 +30,13 @@ $(document).ready(function(){
     // div.addClass('cloud');
     var cloud = $("<div class='cloud'><i class='fas fa-cloud'></i></div>");
     var left= document.body.offsetWidth + cloud.width();
-    var top=`${Math.floor(Math.random()*100)+15}vh`;
+    var top=`${Math.floor(Math.random()*100)+14}vh`;
 
     // div.append(el);
     cloud.css({'left':left,'top':top});
     header.append(cloud);
     // console.log(cloud.position());
-    cloud.animate({left: -( cloud.width() ) }, 50000,"linear",function(){
+    cloud.animate({left: -( cloud.width() ) }, 70000,"linear",function(){
       cloud.remove();
     });
   }
@@ -46,7 +46,7 @@ $(document).ready(function(){
 //   for(var i=0;i<number;i++){
 // 
 // };
-  setInterval(cloudGenerator,1000);
+  setInterval(cloudGenerator,4000);
 
   var quoteCounter = 0;
   var $testimonials = '#skillsTestimonials p';
@@ -75,14 +75,14 @@ $(".nav1").on('click', function(e) {
 $(window).on('scroll', function(){
  if($(window).scrollTop()>780){
   var $bar = $('.bar');
-    $bar.eq(0).animate({width:'65%'}, {duration: 2500});
-    $bar.eq(1).animate({width:'50%'}, {duration: 2000});
-    $bar.eq(2).animate({width:'40%'}, {duration: 1800});
-    $bar.eq(3).animate({width:'10%'}, {duration: 700});
-    $bar.eq(4).animate({width:'10%'}, {duration: 2000});
-    $bar.eq(5).animate({width:'10%'}, {duration: 2000});
-    $bar.eq(6).animate({width:'10%'}, {duration: 2000});
-    $bar.eq(7).animate({width:'65%'}, {duration: 2000});
+    $bar.eq(0).animate({width:'70%'}, {duration: 2500});
+    $bar.eq(1).animate({width:'70%'}, {duration: 2500});
+    $bar.eq(2).animate({width:'70%'}, {duration: 2500});
+    $bar.eq(3).animate({width:'70%'}, {duration: 2500});
+    $bar.eq(4).animate({width:'70%'}, {duration: 2500});
+    $bar.eq(5).animate({width:'70%'}, {duration: 2500});
+    $bar.eq(6).animate({width:'70%'}, {duration: 2500});
+    $bar.eq(7).animate({width:'70%'}, {duration: 2500});
   }
 });
 
@@ -199,3 +199,29 @@ $('#fav6').on('click mouseover', function () {
   $('.circlePhoto').css('background-image', "url(./assets/tea1.png)");
   $('#favtext').append("All Tea!");
 });
+
+// TODO: Experimental! Be careful!
+// // TODO: Make a list objects that contains
+// var favoriteThings =
+// [
+//   {selector: "#fav1", imageURL: "./tea1.png", message: "All Tea!"},
+//   {selector: "#fav1", imageURL: "./tea1.png", message: "All Tea!"},
+//   {selector: "#fav1", imageURL: "./tea1.png", message: "All Tea!"},
+//   {selector: "#fav1", imageURL: "./tea1.png", message: "All Tea!"}
+// ]
+// 
+// favoriteThings.forEach(function(faveThing){
+//   revealImage(faveThing);
+// })
+// 
+// 
+// function revealImage(imageObject){
+//   $selector = imageObject.selector;
+//   imageURL = imagObject.imageURL;
+//   message = imageObject.message
+//   $($selector).on('click mouseover', function () {
+//     $('#favtext').empty();
+//     $('.circlePhoto').css('background-image', "url(./assets/"+imageURL+")");
+//     $('#favtext').append(message);
+//   }
+// }

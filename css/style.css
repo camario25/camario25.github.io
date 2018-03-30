@@ -63,7 +63,7 @@ main {
   top: 75px;
 }
 .circlePhoto {
-  background-image: url(../assets/Mario-Staff.jpg);
+  background-image: url(../assets/Mario2.jpg);
   background-position: center;
   background-size: cover;
   height: 25em;
@@ -124,12 +124,12 @@ p {
   width:35%;
   text-align: center;
   background-color: #D3B6E8;
-  margin: 5em 0 1em 1em;
+  margin: 2em 0 1em 1em;
 }
 #skillsList  div{
   display: flex;
   width:100%;
-  padding:1em;
+  padding:.5em;
   justify-content:flex-start;
 }
 .begAdv {
