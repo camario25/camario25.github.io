@@ -1,4 +1,4 @@
-This was a challenging project for me but I learned more about making websites than ever before.  First I made a wireframe by hand.  I talked to a classmate and we whiteboarded and we looked through the internet for examples of other portfolio pages.  We each took what we liked and made our wire frame.
+On this solo project, I learned more about making websites than ever before.  First I made a wireframe by hand.  I talked to a classmate and we whiteboarded and we looked through the internet for examples of other portfolio pages.  We each took what we liked and made our wire frame.
 
 The html layout was straight forward after the wireframe.  I put the elements that I knew I would need in order from top to bottom.  I made special notes where flexbox would come in handy from making elements go from vertical to horizontal.  This is where I created special div's that would help make flexbox easier.
 
@@ -10,8 +10,4 @@ CSS was long and tedious.  I will say that I was able to use pieces of my former
 
 Another aspect of Webdesign that I learned for the first time was how to use an external font not from Google.  I downloaded the otc files, then converted them to woff and woff2 files and connected them to my website.  All this was brand new and took some time to learn and make work.
 
-Finally the jquery.  I asked for help from the more advanced students in the class and they were super helpful!  Abdulhalim and Marcelino were especially helpful and making the cloud movement work.  Other students and Stephanie helped me understand what was going on in the jquery process.  I got many things to work but failed on what I wanted to happen on about section.
-
-I feel I am still missing some process to work out the logic and get the right process to solve the problem.  I could not get my jquery to change the background photo of my circle image in the about section.  I was very frustrating but I learned a lot as I reviewed our class notes and read documentation.  I wanted the links to change the photo and add a text underneath but couldn't get to work right.  Every step seemed like a deep dive into learning something new.
-
-
+I am proud of the random cloud generator.  I can adjust the many of it's characteristics and for future development I plan to allow the user to change the speed of the clouds.
