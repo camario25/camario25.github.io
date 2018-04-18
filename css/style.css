@@ -62,6 +62,24 @@ main {
   left: 114px;
   top: 75px;
 }
+/* #myCarousel {
+  height: 50em;
+  width: 60em;
+  margin:auto;
+}
+.carousel-control {
+  height: 35em;
+} */
+.carousel .item {
+  height: 35em;
+}
+
+.item .carousel-pics {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 35em;
+}
 .circlePhoto {
   background-image: url(../assets/Mario2.jpg);
   background-position: center;
@@ -75,6 +93,10 @@ h2 {
   text-align: center;
   margin-bottom: 1.5em;
   font-family: 'fontin_sans_rgbold';
+}
+#contact {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 #favtext {
   text-align: center;

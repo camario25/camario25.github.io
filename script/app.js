@@ -46,7 +46,18 @@ $(document).ready(function(){
 //   for(var i=0;i<number;i++){
 // 
 // };
-  setInterval(cloudGenerator,4000);
+function setIntervalX(callback, delay, repetitions) {
+    var x = 0;
+    var intervalID = window.setInterval(function () {
+
+       callback();
+
+       if (++x === repetitions) {
+           window.clearInterval(intervalID);
+       }
+    }, delay);
+}
+  setIntervalX(cloudGenerator,4000, 22);
 
   var quoteCounter = 0;
   var $testimonials = '#skillsTestimonials p';
