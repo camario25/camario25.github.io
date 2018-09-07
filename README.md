@@ -1,13 +1,9 @@
-On this solo project, I learned more about making websites than ever before.  First I made a wireframe by hand.  I talked to a classmate and we whiteboarded and we looked through the internet for examples of other portfolio pages.  We each took what we liked and made our wire frame.
+On this solo project, I learned a great deal about making a website.
 
-The html layout was straight forward after the wireframe.  I put the elements that I knew I would need in order from top to bottom.  I made special notes where flexbox would come in handy from making elements go from vertical to horizontal.  This is where I created special div's that would help make flexbox easier.
+I created a wireframe and I put the elements that I knew I would need in order from top to bottom.  I made special notes where CSS flexbox would come in handy from making elements go from vertical to horizontal.
 
-For this project I decided to experiment with bootstrap for the first time ever.  I spent about a half of a day reading documentation on how to use it on a website.  I decided to use if for my carousel.  I went I got it to work and even embeded a song of mine from soundcloud.  Kay suggested that I even out the images sizes as they rotate. Adjusting the css on the embeded souncloud link turned out to be more difficult than I thought but made it work.
+I use boostrap for the carousel and font awesome for the logos.
 
-Next I decided to learn about font awesome, also my first experience with it.  I spent more time reading documentation and got it to work.  I learned that I had to switch to the latest fontawesome in order to get the latest logos that I wanted.
+I also used an external font by downloading the otc files and then converting them to woff and woff2 files.
 
-CSS was long and tedious.  I will say that I was able to use pieces of my former projects to piece the html and css together.  That helped save time.  but CSS was still slow in order to make the design I wanted.  And it was ongoing even after because as soon as I made any change, the css had to be adjusted.
-
-Another aspect of Webdesign that I learned for the first time was how to use an external font not from Google.  I downloaded the otc files, then converted them to woff and woff2 files and connected them to my website.  All this was brand new and took some time to learn and make work.
-
-I am proud of the random cloud generator.  I can adjust the many of it's characteristics and for future development I plan to allow the user to change the speed of the clouds.
+I created a random cloud generator to add some animation.  For future development, I plan to allow the user to change the speed and quantity of the clouds.
