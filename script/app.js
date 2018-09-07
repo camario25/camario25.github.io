@@ -1,81 +1,55 @@
 
 $(document).ready(function(){
-  console.log('hell0');
-  //width of the screen
-  // make i tag load off left of screen
-  // 
-
-
-
-
-  // function cloudGenerator(){
-  //   var left=`${Math.floor(Math.random()*100)}vw`;
-  //   var top=`${Math.floor(Math.random()*100)+15}vh`;
-  //   var div=$('<div></div>');
-  //   div.addClass('cloud');
-  //   var el=$('<i></i>');
-  //   el.addClass('fas fa-cloud');
-  //   div.append(el);
-  //   div.css({'left':left,'top':top});
-  //   header.append(div);
-  //   console.log(div.position());
-  //   div.animate({left: '-=200'}, 50000,"linear", cloudGenerator());
-  // }
-
-  function cloudGenerator(){
-    // var el=$('<i></i>');
-    // el.addClass('fas fa-cloud');
-    // 
-    // var div=$('<div></div>');
-    // div.addClass('cloud');
-    var cloud = $("<div class='cloud'><i class='fas fa-cloud'></i></div>");
-    var left= document.body.offsetWidth + cloud.width();
-    var top=`${Math.floor(Math.random()*100)+14}vh`;
-
-    // div.append(el);
-    cloud.css({'left':left,'top':top});
-    header.append(cloud);
-    // console.log(cloud.position());
-    cloud.animate({left: -( cloud.width() ) }, 70000,"linear",function(){
-      cloud.remove();
-    });
-  }
 
   var header= $("header");
 
-//   for(var i=0;i<number;i++){
-// 
-// };
-function setIntervalX(callback, delay, repetitions) {
-    var x = 0;
-    var intervalID = window.setInterval(function () {
+//generates the clouds just to the right of the screen(cloud width), picks a random vertical location,
+  function cloudGenerator(){
+    var cloud = $("<div class='cloud'><i class='fas fa-cloud'></i></div>"); //actual cloud image
+    var left= document.body.offsetWidth + cloud.width();//allows cloud to appear just to the right of screen
+    var top=`${Math.floor(Math.random()*100)+14}vh`;//random vertical location
+    cloud.css({'left':left,'top':top});
+    header.append(cloud);//cloud is appended just header not whole page
+    cloud.animate({left: -( cloud.width() ) }, 70000,"linear",function(){
+      cloud.remove();
+    });//function that moves cloud in a straight line to the left then erases once it leaves the screen, speed of cloud can be adjusted
+  }
 
-       callback();
+//allows to adjust the quantity of clouds and how often a cloud is generated
+  function setIntervalX(callback, delay, repetitions) {
+      var x = 0;//counter to compare to total(repetitions)
+      var intervalID = window.setInterval(function () {
+         callback();
+         if (++x === repetitions) { //repetitions is amount of clouds
+             window.clearInterval(intervalID);//stops creating clouds
+         }
+      }, delay);
+  }
 
-       if (++x === repetitions) {
-           window.clearInterval(intervalID);
-       }
-    }, delay);
-}
-  setIntervalX(cloudGenerator,4000, 22);
+//actually calls the cloud generator functions
+  setIntervalX(cloudGenerator,4000, 20);//a cloud every 4 seconds, 20 clouds total
 
-  var quoteCounter = 0;
-  var $testimonials = '#skillsTestimonials p';
-  var quoteLength = $($testimonials).length;
+  //testimonial section is on timer looping through the quotes, scalable to as many quotes as wanted
+    var quoteCounter = 0;
+    var $testimonials = '#skillsTestimonials p';
+    var quoteLength = $($testimonials).length;
 
-  setInterval(function () {
-    $($testimonials).eq(quoteCounter).fadeOut(800, function () {
-      if (quoteCounter === quoteLength - 1) {
-        quoteCounter = 0;
-      } else {
-        quoteCounter += 1;
-      }
-      $($testimonials).eq(quoteCounter).fadeIn();
-    });
-  }, 6500);
-    
-});
+    setInterval(function () {
+      $($testimonials).eq(quoteCounter).fadeOut(800, function () {
+        if (quoteCounter === quoteLength - 1) {
+          quoteCounter = 0;
+        } else {
+          quoteCounter += 1;
+        }
+        $($testimonials).eq(quoteCounter).fadeIn();
+      });
+    }, 6500);
 
+  });
+//end of on document ready section
+
+
+//navigation bar: click goes to target on page
 $(".nav1").on('click', function(e) {
   e.preventDefault();
   var thisTarget = $(this).attr('href');
@@ -83,6 +57,7 @@ $(".nav1").on('click', function(e) {
   $('html, body').animate({scrollTop: targetOffset}, 1000);
 });
 
+//Animates and expands the bars to the right to show my skills, triggered by the scrolling action to the top of the section
 $(window).on('scroll', function(){
  if($(window).scrollTop()>780){
   var $bar = $('.bar');
@@ -97,84 +72,14 @@ $(window).on('scroll', function(){
   }
 });
 
-// $('.hamburger').on('click', function (e) {
-//   e.preventDefault();
-//   console.log('hamtest');
-//   $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
-//   $('section:first').addClass('navSmall');
-// });
-
+//togles between hamburger and navagation links at top of page
+//can be first seen when screen width is at phone size
 $('.hamburger').on('click', function (e) {
   e.preventDefault();
-  console.log('hamtest');
-  $('.navSmall').toggle(500);  
+  $('.navSmall').toggle(500);
 });
 
-
-
-// $('.hamburger').on('click', function (e) {
-//   e.preventDefault();
-//   console.log('hamtest');
-//   $('body').remove("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
-// });
-
-// $('.hamburger').toggle( function () {
-//   $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
-//   $('section:first').addClass('navSmall');
-// },
-//   function () {
-//   $('section:first').detach();
-// });
-
-
-// var toggle = function () {
-//   if ($('section:first').attr() === "navSmall") {
-//     $('section:first').hide();
-//   }
-// }
-// $('.hamburger').toggle(function () {
-//   console.log('hamtest');
-//   $('body').prepend("<section><a href='#proj'>PROJECTS</a><a href='#biography'>ABOUT</a><a href='#sklz'>SKILLS</a><a href='#contact'>CONNECT</a></section>");
-//   $('section:first').addClass('navSmall');
-// }, function () {
-//   $('section:first').hide();
-// });
-
-// function Favorite (name, image, trigger) {
-//   console.log('constructed');
-//   this.name = name;
-//   this.image = image;
-//   this.trigger = trigger;
-// }
-// 
-// Favorite.prototype = {
-//   appear: function () {
-//       console.log(this.appear);
-//       $('.circlePhoto').append(this.image);
-//       console.log('fav111');
-//       $('#favtext').append(this.name);
-//       $(this.name).off('click mouseover');
-//   }
-// };
-// var music = new Favorite("DJing and Producing Music!", '../assets/MarioDJing.jpg', "$('#fav1')");
-// var food = new Favorite("Anything Curry!", '..assets/curry1.jpg', "$('#fav2')");
-// var travel = new Favorite("Flying the Globe!", '../assets/travel.jpeg', "$('#fav3')");
-// var movie = new Favorite("Nacho Libre!", '../assets/luchador.jpg', "$('#fav4')");
-// var sport = new Favorite("Soccer World Cup!", '../assets/world_cup.jpeg', "$('#fav5')");
-// var drink = new Favorite("All Tea!", '../assets/tea1.png', "$('#fav6')");
-// 
-// var favoritesArray = [music, food, travel, movie, sport, drink];
-
-
-
-// $(favoritesArray).each(function (i, favorite) {
-//   console.log(favorite);
-//   $('.favList a').on('click mouseover', function () {
-//     favorite.appear();
-//     console.log(favorite.appear());
-//   });
-// });
-// 
+//this section replaces the image and message on my personal interests section
 $('#fav1').on('click mouseover', function () {
   $('#favtext').empty();
   $('.circlePhoto').css('background-image', "url(./assets/MarioDJing.jpg)");
@@ -210,29 +115,3 @@ $('#fav6').on('click mouseover', function () {
   $('.circlePhoto').css('background-image', "url(./assets/tea1.png)");
   $('#favtext').append("All Tea!");
 });
-
-// TODO: Experimental! Be careful!
-// // TODO: Make a list objects that contains
-// var favoriteThings =
-// [
-//   {selector: "#fav1", imageURL: "./tea1.png", message: "All Tea!"},
-//   {selector: "#fav1", imageURL: "./tea1.png", message: "All Tea!"},
-//   {selector: "#fav1", imageURL: "./tea1.png", message: "All Tea!"},
-//   {selector: "#fav1", imageURL: "./tea1.png", message: "All Tea!"}
-// ]
-// 
-// favoriteThings.forEach(function(faveThing){
-//   revealImage(faveThing);
-// })
-// 
-// 
-// function revealImage(imageObject){
-//   $selector = imageObject.selector;
-//   imageURL = imagObject.imageURL;
-//   message = imageObject.message
-//   $($selector).on('click mouseover', function () {
-//     $('#favtext').empty();
-//     $('.circlePhoto').css('background-image', "url(./assets/"+imageURL+")");
-//     $('#favtext').append(message);
-//   }
-// }
