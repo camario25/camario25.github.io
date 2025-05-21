@@ -18,7 +18,7 @@ This project was originally created as part of my web development bootcamp in 20
 This update includes:
 
 - Updated language
-- Added the **Tic Na Cho** project
+- Added the **Tic Na Cho** project. [Play the Game](https://ticnacho.z22.web.core.windows.net/playgame). [Source Code](https://github.com/camario25/tic-tac-toe).
 - Code cleanup
 - Improved documentation
 
