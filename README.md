@@ -1,11 +1,28 @@
-On this solo project, I learned a great deal about making a website.
+# Project Overview
 
-I created a wireframe and I put the elements that I knew I would need in order from top to bottom.  I made special notes where CSS flexbox would come in handy from making elements go from vertical to horizontal.
+This project was originally created as part of my web development bootcamp in 2018. It served as a solo exploration of building a website from the ground up. In 2025, I revisited and updated the project to reflect modern standards and to document my growth as a developer.
 
-I use boostrap for the carousel and font awesome for the logos.
+## Development Highlights
 
-I also used an external font by downloading the otc files and then converting them to woff and woff2 files.
+- Created wireframes to map out the site layout, organizing elements from top to bottom.
+- Included notes for using **CSS Flexbox** to handle responsive layouts (e.g., shifting elements from vertical to horizontal).
+- Implemented a **Bootstrap** carousel for image transitions.
+- Used **Font Awesome** for iconography.
+- Integrated an external font by converting `.otf` files to `.woff` and `.woff2` formats for web optimization.
+- Developed a **random cloud generator** to add animated visual effects.
 
-I created a random cloud generator to add some animation.  For future development, I plan to allow the user to change the speed and quantity of the clouds.
+  > *Future enhancement idea: Allow users to adjust cloud speed and quantity.*
 
-Website:  https://camario25.github.io/
+## 2025 Update
+
+This update includes:
+
+- Updated language
+- Added the **Tic Na Cho** project
+- Code cleanup
+- Improved documentation
+
+This project serves both as a reflection of my early learning and a showcase of how far I’ve come as a developer.
+
+**Live Site:** [https://camario25.github.io/](https://camario25.github.io/)
+

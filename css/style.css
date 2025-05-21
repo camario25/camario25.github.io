@@ -171,6 +171,9 @@ h4 {
   background-repeat: no-repeat;
   color: #D3B6E8;
 }
+.skill{
+  width: 1.5em;
+}
 #soundclouddiv {
   background-color: #D3B6E8;
   padding: 2em 1em 3.9em 1em;
