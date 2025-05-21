@@ -113,9 +113,11 @@ footer {
 }
 .skills {
   padding: 0 2em;
+  margin-top: 5em;
 }
 #biography {
   padding: 0 2em;
+  margin-top: 5em;
 }
 .skillsBox {
   display:flex;
@@ -145,8 +147,9 @@ p {
 #skillsTestimonials{
   width:35%;
   text-align: center;
-  background-color: #D3B6E8;
-  margin: 2em 0 1em 1em;
+  color: #4E3063;
+  margin: 0 0 1em 1em;
+  height: 23em;
 }
 #skillsList  div{
   display: flex;
@@ -170,6 +173,12 @@ h4 {
   background-size: 100% 50%;
   background-repeat: no-repeat;
   color: #D3B6E8;
+}
+.skill{
+  width: 1.5em;
+}
+.projects{
+  margin-top: 5em;
 }
 #soundclouddiv {
   background-color: #D3B6E8;
