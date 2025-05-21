@@ -199,13 +199,9 @@ ul a {
   overflow: hidden;
   width: 3em;
   height: 3em;
-  display: flex;     /* centers icon */
-  align-items: center;
-  justify-content: center;
-
 }
 .cloud i {
-  font-size: 1.5em;    /* consistent size for icon */
+  font-size: 1.5em;
 }
 form {
   margin: auto;
