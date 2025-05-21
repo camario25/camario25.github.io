@@ -29,6 +29,8 @@ header {
     margin-top: 12px;
     background-attachment: fixed;
     font-family: 'fontin_sans_rgregular';
+    position: relative;
+    overflow: hidden;
 }
 h1 {
   text-align: center;
@@ -201,7 +203,14 @@ ul a {
 }
 .cloud{
   position:absolute;
-  color:white:;
+  pointer-events: none;
+  z-index: 5;
+  overflow: hidden;
+  width: 3em;
+  height: 3em;
+}
+.cloud i {
+  font-size: 1.5em;
 }
 form {
   margin: auto;
