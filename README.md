@@ -22,7 +22,8 @@ This update includes:
 - Code cleanup
 - Improved documentation
 
-This project serves both as a reflection of my early learning and a showcase of how far I’ve come as a developer.
+This project serves both as a reflection of my early learning and a showcase of how far I’ve come as a developer.  
+While this site is not fully optimized for mobile devices, my newer project, *Tic Na Cho*, demonstrates my focus on responsive, mobile-friendly design.
 
 **Live Site:** [https://camario25.github.io/](https://camario25.github.io/)
 
